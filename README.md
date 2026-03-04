@@ -100,7 +100,87 @@ Real-time data tools
 
 ---
 
-## `> projects.showcase()`
+## `> llm_research.load()`
+
+<div align="center">
+<table>
+<tr>
+<td width="50%">
+
+**[`Multimodal_stem_model_finetuning`](https://github.com/atharva789/Multimodal_stem_model_finetuning)**
+> Fine-tuned Deepseek-R1 1.5B on STEM problems
+
+![Python](https://img.shields.io/badge/Python-00FF9F?style=flat-square&labelColor=0d0d0d&logo=python&logoColor=00FF9F)
+![HuggingFace](https://img.shields.io/badge/🤗-FFD21E?style=flat-square&labelColor=0d0d0d)
+
+</td>
+<td width="50%">
+
+**[`cardio_challenge_final`](https://github.com/atharva789/cardio_challenge_final)**
+> Cardiovascular risk prediction ML challenge
+
+![Python](https://img.shields.io/badge/Python-00FF9F?style=flat-square&labelColor=0d0d0d&logo=python&logoColor=00FF9F)
+![ML](https://img.shields.io/badge/ML%20Research-FF00FF?style=flat-square&labelColor=0d0d0d)
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+**[`handwritten-digit-recogniser-from-scratch-v1-`](https://github.com/atharva789/handwritten-digit-recogniser-from-scratch-v1-)**
+> Neural network for digit recognition, built from scratch
+
+![Python](https://img.shields.io/badge/Python-00FF9F?style=flat-square&labelColor=0d0d0d&logo=python&logoColor=00FF9F)
+![From Scratch](https://img.shields.io/badge/From%20Scratch-FF00FF?style=flat-square&labelColor=0d0d0d)
+
+</td>
+</tr>
+</table>
+</div>
+
+---
+
+## `> swe_projects.load()`
+
+<div align="center">
+<table>
+<tr>
+<td width="50%">
+
+**[`concordia`](https://github.com/atharva789/concordia)**
+> Concurrent systems & distributed tooling
+
+![Go](https://img.shields.io/badge/Go-00FF9F?style=flat-square&labelColor=0d0d0d&logo=go&logoColor=00FF9F)
+![Concurrent](https://img.shields.io/badge/Concurrent-FF6F00?style=flat-square&labelColor=0d0d0d)
+
+</td>
+<td width="50%">
+
+**[`Overmind`](https://github.com/atharva789/Overmind)**
+> Multi-player multi-agent vibe coding platform
+
+![TypeScript](https://img.shields.io/badge/TypeScript-00BFFF?style=flat-square&labelColor=0d0d0d)
+![Agents](https://img.shields.io/badge/Multi--Agent-FF00FF?style=flat-square&labelColor=0d0d0d)
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+**[`xray_analysis`](https://github.com/atharva789/xray_analysis)**
+> X-ray image analysis, visualization & automated mastery reporting
+
+![Python](https://img.shields.io/badge/Python-00FF9F?style=flat-square&labelColor=0d0d0d&logo=python&logoColor=00FF9F)
+![Medical AI](https://img.shields.io/badge/Medical%20AI-FF00FF?style=flat-square&labelColor=0d0d0d)
+
+</td>
+</tr>
+</table>
+</div>
+
+---
+
+## `> llm_deployment.load()`
 
 <div align="center">
 <table>
@@ -117,17 +197,6 @@ Real-time data tools
 </td>
 <td width="50%">
 
-**[`Overmind`](https://github.com/atharva789/Overmind)**
-> Multi-player multi-agent vibe coding platform
-
-![TypeScript](https://img.shields.io/badge/TypeScript-00BFFF?style=flat-square&labelColor=0d0d0d)
-![Agents](https://img.shields.io/badge/Multi--Agent-FF00FF?style=flat-square&labelColor=0d0d0d)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
 **[`geospatial-web-scraper`](https://github.com/atharva789/geospatial-web-scraper)**
 > Highly concurrent geospatial web-scraper
 
@@ -135,24 +204,15 @@ Real-time data tools
 ![Concurrent](https://img.shields.io/badge/Concurrent-FF6F00?style=flat-square&labelColor=0d0d0d)
 
 </td>
-<td width="50%">
-
-**[`Multimodal_stem_model_finetuning`](https://github.com/atharva789/Multimodal_stem_model_finetuning)**
-> Fine-tuned Deepseek-R1 1.5B on STEM problems
-
-![Python](https://img.shields.io/badge/Python-00FF9F?style=flat-square&labelColor=0d0d0d&logo=python&logoColor=00FF9F)
-![HuggingFace](https://img.shields.io/badge/🤗-FFD21E?style=flat-square&labelColor=0d0d0d)
-
-</td>
 </tr>
 <tr>
 <td colspan="2" align="center">
 
-**[`xray_analysis`](https://github.com/atharva789/xray_analysis)**
-> X-ray image analysis, visualization & automated mastery reporting
+**[`embeddings-api-ood`](https://github.com/atharva789/embeddings-api-ood)**
+> Embeddings API with out-of-distribution detection
 
 ![Python](https://img.shields.io/badge/Python-00FF9F?style=flat-square&labelColor=0d0d0d&logo=python&logoColor=00FF9F)
-![Medical AI](https://img.shields.io/badge/Medical%20AI-FF00FF?style=flat-square&labelColor=0d0d0d)
+![API](https://img.shields.io/badge/LLM%20Deployment-FF00FF?style=flat-square&labelColor=0d0d0d)
 
 </td>
 </tr>
