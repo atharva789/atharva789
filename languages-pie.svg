@@ -1,0 +1,109 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" width="500" height="300">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="text-glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" fill="#0d0d0d" rx="12"/>
+  <!-- Neon border -->
+  <rect x="1" y="1" width="498" height="298" fill="none" stroke="#00FF9F" stroke-width="1" rx="11" opacity="0.4"/>
+
+  <!-- Title -->
+  <text x="250" y="34"
+        text-anchor="middle"
+        font-family="'Courier New', Courier, monospace"
+        font-size="14"
+        fill="#00FF9F"
+        filter="url(#text-glow)"
+        letter-spacing="4">// TOP LANGUAGES</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="45" x2="460" y2="45" stroke="#00FF9F" stroke-width="0.5" opacity="0.25"/>
+
+  <!--
+    PIE CHART  cx=150  cy=170  r=110
+    Angles measured clockwise from 12 o'clock.
+    Point formula: x = cx + r*sin(deg)   y = cy - r*cos(deg)
+
+    0°   → (150,  60)
+    216° → ( 85, 259)   Python ends here   (60%)
+    259° → ( 42, 191)   TypeScript ends    (12%)
+    295° → ( 50, 123)   Go ends            (10%)
+    324° → ( 85,  81)   R ends             (8%)
+    360° → (150,  60)   Other ends         (10%)
+  -->
+
+  <!-- Python 60% — Neon Green #00FF9F -->
+  <path d="M 150 170 L 150 60 A 110 110 0 1 1 85 259 Z"
+        fill="#00FF9F" stroke="#0d0d0d" stroke-width="2.5"
+        opacity="0.92" filter="url(#glow)"/>
+
+  <!-- TypeScript 12% — Neon Magenta #FF00FF -->
+  <path d="M 150 170 L 85 259 A 110 110 0 0 1 42 191 Z"
+        fill="#FF00FF" stroke="#0d0d0d" stroke-width="2.5"
+        opacity="0.92" filter="url(#glow)"/>
+
+  <!-- Go 10% — Electric Cyan #00BFFF -->
+  <path d="M 150 170 L 42 191 A 110 110 0 0 1 50 123 Z"
+        fill="#00BFFF" stroke="#0d0d0d" stroke-width="2.5"
+        opacity="0.92" filter="url(#glow)"/>
+
+  <!-- R 8% — Neon Gold #FFD700 -->
+  <path d="M 150 170 L 50 123 A 110 110 0 0 1 85 81 Z"
+        fill="#FFD700" stroke="#0d0d0d" stroke-width="2.5"
+        opacity="0.92" filter="url(#glow)"/>
+
+  <!-- Other 10% — Neon Purple #A855F7 -->
+  <path d="M 150 170 L 85 81 A 110 110 0 0 1 150 60 Z"
+        fill="#A855F7" stroke="#0d0d0d" stroke-width="2.5"
+        opacity="0.92" filter="url(#glow)"/>
+
+  <!-- LEGEND — right side -->
+
+  <!-- Python -->
+  <rect x="295" y="76" width="14" height="14" fill="#00FF9F" rx="2" filter="url(#glow)"/>
+  <text x="318" y="88" font-family="'Courier New', monospace" font-size="13" fill="#e0e0e0">Python</text>
+  <text x="468" y="88" font-family="'Courier New', monospace" font-size="13" fill="#00FF9F" text-anchor="end" filter="url(#text-glow)">60%</text>
+
+  <!-- TypeScript -->
+  <rect x="295" y="109" width="14" height="14" fill="#FF00FF" rx="2" filter="url(#glow)"/>
+  <text x="318" y="121" font-family="'Courier New', monospace" font-size="13" fill="#e0e0e0">TypeScript</text>
+  <text x="468" y="121" font-family="'Courier New', monospace" font-size="13" fill="#FF00FF" text-anchor="end" filter="url(#text-glow)">12%</text>
+
+  <!-- Go -->
+  <rect x="295" y="142" width="14" height="14" fill="#00BFFF" rx="2" filter="url(#glow)"/>
+  <text x="318" y="154" font-family="'Courier New', monospace" font-size="13" fill="#e0e0e0">Go</text>
+  <text x="468" y="154" font-family="'Courier New', monospace" font-size="13" fill="#00BFFF" text-anchor="end" filter="url(#text-glow)">10%</text>
+
+  <!-- R -->
+  <rect x="295" y="175" width="14" height="14" fill="#FFD700" rx="2" filter="url(#glow)"/>
+  <text x="318" y="187" font-family="'Courier New', monospace" font-size="13" fill="#e0e0e0">R</text>
+  <text x="468" y="187" font-family="'Courier New', monospace" font-size="13" fill="#FFD700" text-anchor="end" filter="url(#text-glow)">8%</text>
+
+  <!-- Other -->
+  <rect x="295" y="208" width="14" height="14" fill="#A855F7" rx="2" filter="url(#glow)"/>
+  <text x="318" y="220" font-family="'Courier New', monospace" font-size="13" fill="#e0e0e0">Other</text>
+  <text x="468" y="220" font-family="'Courier New', monospace" font-size="13" fill="#A855F7" text-anchor="end" filter="url(#text-glow)">10%</text>
+
+  <!-- Footer -->
+  <text x="250" y="278"
+        text-anchor="middle"
+        font-family="'Courier New', monospace"
+        font-size="9"
+        fill="#333"
+        letter-spacing="2">SOURCED FROM GITHUB REPOS</text>
+</svg>

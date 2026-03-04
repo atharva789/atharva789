@@ -25,7 +25,7 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atharva789&layout=pie&theme=radical&hide_border=true&bg_color=0d0d0d&title_color=00FF9F&text_color=ffffff&langs_count=6" height="300" alt="Top Languages Pie"/>
+<img src="./languages-pie.svg" alt="Top Languages Pie" width="500"/>
 
 </div>
 
