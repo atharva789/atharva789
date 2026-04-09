@@ -49,7 +49,7 @@ Multi-agent coding platform where multiple engineers and AI agents work in the s
 
 ### [Concordia](https://github.com/atharva789/concordia)
 
-Concurrent systems tooling in Go — geospatial data pipelines, high-throughput scrapers, and CLI utilities. Written to handle the cases where Python's GIL gets in the way and you need actual parallelism with predictable latency.
+Multiplayer prompt collaboration layer for Claude Code, written in Go. A host starts a party and participants join via invite code — each submitting prompts that a Gemini deduplication agent merges into a single consolidated multi-step prompt, executed by the host's Claude Code CLI and streamed back to everyone in real time. Solves the coordination problem when multiple engineers want to steer the same AI session.
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Concurrency](https://img.shields.io/badge/Concurrency-00ADD8?style=flat)
