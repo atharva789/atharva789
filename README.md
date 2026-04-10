@@ -4,14 +4,14 @@
 
 **AI Engineer · ML Systems · Agentic Infrastructure**
 
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)](https://langchain-ai.github.io/langgraph/)
+[![MCP SDK](https://img.shields.io/badge/MCP_SDK-6E40C9?style=flat)](https://modelcontextprotocol.io)
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)](https://aws.amazon.com)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](https://go.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://docker.com)
-[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://langchain.com)
+[![LanceDB](https://img.shields.io/badge/LanceDB-00B4D8?style=flat)](https://lancedb.com)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)](https://postgresql.org)
 
 </div>
 
@@ -29,10 +29,15 @@ If you're hiring or evaluating: I tend to own problems end-to-end and push code 
 
 Anomaly detection for OT/ICS networks — the kind of infrastructure (PLCs, SCADA, industrial protocols) that traditional security tooling can't touch without breaking things. Runs lightweight ML models over network traffic, surfaces deviations in real time, and feeds a live alerting dashboard. Built because most OT environments are air-gapped, resource-constrained, and one misconfigured firewall rule away from a bad day.
 
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
+![LanceDB](https://img.shields.io/badge/LanceDB-00B4D8?style=flat)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+&nbsp;|&nbsp;
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![OT Security](https://img.shields.io/badge/OT%20%2F%20ICS%20Security-2D2D2D?style=flat)
-![Anomaly Detection](https://img.shields.io/badge/Anomaly%20Detection-6E40C9?style=flat)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+&nbsp;|&nbsp;
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 
 ---
 
@@ -40,20 +45,32 @@ Anomaly detection for OT/ICS networks — the kind of infrastructure (PLCs, SCAD
 
 Multi-agent coding platform where multiple engineers and AI agents work in the same session simultaneously — each agent scoped to a task, with its own tool access and context. The core problem: today's AI dev tools are single-player and single-agent. Overmind is what happens when you take that constraint away.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
-![Multi-Agent](https://img.shields.io/badge/Multi--Agent-6E40C9?style=flat)
-![Real-Time](https://img.shields.io/badge/Real--Time-009688?style=flat)
+![fastembed](https://img.shields.io/badge/fastembed%20(ONNX)-FF6F00?style=flat)
+![OpenAI SDK](https://img.shields.io/badge/OpenAI_SDK-412991?style=flat&logo=openai&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat)
+&nbsp;|&nbsp;
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+&nbsp;|&nbsp;
+![AWS ECS](https://img.shields.io/badge/AWS_ECS_Fargate-FF9900?style=flat&logo=amazonecs&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ---
 
 ### [Concordia](https://github.com/atharva789/concordia)
 
-Multiplayer prompt collaboration layer for Claude Code, written in Go. A host starts a party and participants join via invite code — each submitting prompts that a Gemini deduplication agent merges into a single consolidated multi-step prompt, executed by the host's Claude Code CLI and streamed back to everyone in real time. Solves the coordination problem when multiple engineers want to steer the same AI session.
+Multiplayer prompt collaboration layer for Claude Code. A host starts a party and participants join via invite code — each submitting prompts that a Gemini deduplication agent merges into a single consolidated multi-step prompt, executed by the host's Claude Code CLI and streamed back to everyone in real time. Solves the coordination problem when multiple engineers want to steer the same AI session.
 
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
-![Concurrency](https://img.shields.io/badge/Concurrency-00ADD8?style=flat)
-![Systems](https://img.shields.io/badge/Distributed%20Systems-2D2D2D?style=flat)
+![asyncio](https://img.shields.io/badge/asyncio-3776AB?style=flat&logo=python&logoColor=white)
+![Gemini API](https://img.shields.io/badge/Gemini_API-4285F4?style=flat&logo=google&logoColor=white)
+&nbsp;|&nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+&nbsp;|&nbsp;
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
 ---
 
