@@ -23,7 +23,7 @@ If you're hiring or evaluating: I care about what's actually been tested and wha
 
 ## Featured Projects
 
-### [AutoBot](https://github.com/atharva789/autobot) &nbsp; ![Status](https://img.shields.io/badge/pivot_in_progress-FFD21E?style=flat)
+### [AutoBot](https://github.com/atharva789/autobot)
 
 Takes a robot schema and a task description and is building toward a task-specific RL policy: reward shaping, curriculum, and termination conditions generated from the schema, then rewritten against real MuJoCo rollout evidence — never a self-reported score. Currently mid-pivot: the robot-representation and protected-evaluation substrate (a robot IR, an MJCF compiler, a six-task falsification harness with seeded failures and hidden graders) is implemented and tested; reward/curriculum synthesis and the training loop are being built now, and the README tracks exactly which claims are load-bearing and which aren't yet.
 
@@ -37,7 +37,7 @@ Takes a robot schema and a task description and is building toward a task-specif
 
 ---
 
-### [od-MPC](https://github.com/atharva789/od-MPC) &nbsp; ![Status](https://img.shields.io/badge/scaffolding-FFD21E?style=flat)
+### [od-MPC](https://github.com/atharva789/od-MPC)
 
 Latent model-predictive control for Innate's MARS robot: rolls candidate command sequences through a learned world model in latent space and picks the one whose predicted rollout lands nearest a goal image — validated with a linear pose probe against ground truth, not just "does the video look right." The search, cost functions, and probe are pure NumPy and fully unit-tested without a GPU, simulator, or model checkout; training wraps the world model as an explicit, opt-in subprocess.
 
@@ -68,7 +68,7 @@ Multi-agent coding platform where multiple engineers and AI agents work in the s
 
 ---
 
-### [Rival](https://github.com/surajkmr4218/rival) &nbsp; ![Role](https://img.shields.io/badge/contributor-586069?style=flat) ![Status](https://img.shields.io/badge/hackathon_build-FFD21E?style=flat)
+### [Rival](https://github.com/surajkmr4218/rival) &nbsp; ![Role](https://img.shields.io/badge/contributor-586069?style=flat)
 
 A 1v1 productivity-betting app built for [Devpost](https://devpost.com/software/1170625): two people stake money on a measurable goal, and instead of self-reported completion, an AI referee grades the outcome from real activity pulled via the GitHub and Notion APIs. Full challenge lifecycle with automatic stake refunds, an append-only balance ledger so every payout is auditable, and a structured (not prose) verdict so the result is machine-actionable. Built by [@surajkmr4218](https://github.com/surajkmr4218) — I'm a contributor, not the primary author.
 
