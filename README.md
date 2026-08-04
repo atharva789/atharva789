@@ -6,38 +6,46 @@
 
 [![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)](https://langchain-ai.github.io/langgraph/)
 [![MCP SDK](https://img.shields.io/badge/MCP_SDK-6E40C9?style=flat)](https://modelcontextprotocol.io)
+[![Multi-Agent Systems](https://img.shields.io/badge/Multi--Agent_Systems-333333?style=flat)](#featured-projects)
+[![Evals](https://img.shields.io/badge/Evals-1F6FEB?style=flat)](#featured-projects)
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)](https://aws.amazon.com)
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org)
-[![LanceDB](https://img.shields.io/badge/LanceDB-00B4D8?style=flat)](https://lancedb.com)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)](https://postgresql.org)
 
 </div>
 
 ---
 
-I work across ML and systems — fine-tuning pipelines, multi-agent orchestration, concurrent Go services, embedding infrastructure. Most of what I build starts from a real constraint: OT networks that can't run heavy security agents, dev workflows that break down once you add more than one AI in the loop, pipelines that need to be fast and correct at the same time.
+I build AI agent systems and the infrastructure around them — orchestration, evals, and world models — then point them at problems that need to hold up to real evidence, not just look good in a demo. A multi-agent coding platform, an evaluation harness that grades agent-produced robot artifacts against real physics, and a latent-space planner for a physical robot are the current shape of that.
 
-If you're hiring or evaluating: I tend to own problems end-to-end and push code that works in production, not just demos. The projects below are the ones I'm most serious about — each started from a specific gap I wanted to close, not a trend I wanted to chase.
+If you're hiring or evaluating: I care about what's actually been tested and what hasn't, and every project below says so directly, including the parts that don't work yet. These are the ones I'm most serious about — each started from a specific gap I wanted to close, not a trend I wanted to chase.
 
 ---
 
 ## Featured Projects
 
-### [OT-Shield](https://github.com/atharva789/ot-shield) &nbsp; ![Status](https://img.shields.io/badge/building-FFD21E?style=flat)
+### [AutoBot](https://github.com/atharva789/autobot) &nbsp; ![Status](https://img.shields.io/badge/pivot_in_progress-FFD21E?style=flat)
 
-Anomaly detection for OT/ICS networks — the kind of infrastructure (PLCs, SCADA, industrial protocols) that traditional security tooling can't touch without breaking things. Runs lightweight ML models over network traffic, surfaces deviations in real time, and feeds a live alerting dashboard. Built because most OT environments are air-gapped, resource-constrained, and one misconfigured firewall rule away from a bad day.
+Takes a robot schema and a task description and is building toward a task-specific RL policy: reward shaping, curriculum, and termination conditions generated from the schema, then rewritten against real MuJoCo rollout evidence — never a self-reported score. Currently mid-pivot: the robot-representation and protected-evaluation substrate (a robot IR, an MJCF compiler, a six-task falsification harness with seeded failures and hidden graders) is implemented and tested; reward/curriculum synthesis and the training loop are being built now, and the README tracks exactly which claims are load-bearing and which aren't yet.
 
+![MuJoCo](https://img.shields.io/badge/MuJoCo-000000?style=flat)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
-![LanceDB](https://img.shields.io/badge/LanceDB-00B4D8?style=flat)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 &nbsp;|&nbsp;
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+
+---
+
+### [od-MPC](https://github.com/atharva789/od-MPC) &nbsp; ![Status](https://img.shields.io/badge/scaffolding-FFD21E?style=flat)
+
+Latent model-predictive control for Innate's MARS robot: rolls candidate command sequences through a learned world model in latent space and picks the one whose predicted rollout lands nearest a goal image — validated with a linear pose probe against ground truth, not just "does the video look right." The search, cost functions, and probe are pure NumPy and fully unit-tested without a GPU, simulator, or model checkout; training wraps the world model as an explicit, opt-in subprocess.
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
+![MuJoCo](https://img.shields.io/badge/MuJoCo-000000?style=flat)
 &nbsp;|&nbsp;
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ---
 
@@ -60,29 +68,18 @@ Multi-agent coding platform where multiple engineers and AI agents work in the s
 
 ---
 
-### [Concordia](https://github.com/atharva789/concordia)
+### [Rival](https://github.com/surajkmr4218/rival) &nbsp; ![Role](https://img.shields.io/badge/contributor-586069?style=flat) ![Status](https://img.shields.io/badge/hackathon_build-FFD21E?style=flat)
 
-Multiplayer prompt collaboration layer for Claude Code. A host starts a party and participants join via invite code — each submitting prompts that a Gemini deduplication agent merges into a single consolidated multi-step prompt, executed by the host's Claude Code CLI and streamed back to everyone in real time. Solves the coordination problem when multiple engineers want to steer the same AI session.
+A 1v1 productivity-betting app built for [Devpost](https://devpost.com/software/1170625): two people stake money on a measurable goal, and instead of self-reported completion, an AI referee grades the outcome from real activity pulled via the GitHub and Notion APIs. Full challenge lifecycle with automatic stake refunds, an append-only balance ledger so every payout is auditable, and a structured (not prose) verdict so the result is machine-actionable. Built by [@surajkmr4218](https://github.com/surajkmr4218) — I'm a contributor, not the primary author.
 
-![asyncio](https://img.shields.io/badge/asyncio-3776AB?style=flat&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=flat&logo=react&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+&nbsp;|&nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+&nbsp;|&nbsp;
 ![Gemini API](https://img.shields.io/badge/Gemini_API-4285F4?style=flat&logo=google&logoColor=white)
-&nbsp;|&nbsp;
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-&nbsp;|&nbsp;
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-
----
-
-### [od-MPC](https://github.com/atharva789/od-MPC) &nbsp; ![Status](https://img.shields.io/badge/scaffolding-FFD21E?style=flat)
-
-Latent model-predictive control for Innate's MARS robot: rolls candidate command sequences through a learned world model in latent space and picks the one whose predicted rollout lands nearest a goal image — validated with a linear pose probe against ground truth, not just "does the video look right." The search, cost functions, and probe are pure NumPy and fully unit-tested without a GPU, simulator, or model checkout; training wraps the world model as an explicit, opt-in subprocess.
-
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
-![MuJoCo](https://img.shields.io/badge/MuJoCo-000000?style=flat)
-&nbsp;|&nbsp;
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ---
 
