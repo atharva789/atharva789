@@ -19,7 +19,7 @@
 
 I work across ML and systems — fine-tuning pipelines, multi-agent orchestration, concurrent Go services, embedding infrastructure. Most of what I build starts from a real constraint: OT networks that can't run heavy security agents, dev workflows that break down once you add more than one AI in the loop, pipelines that need to be fast and correct at the same time.
 
-If you're hiring or evaluating: I tend to own problems end-to-end and push code that works in production, not just demos. The three projects below are the ones I'm most serious about — each started from a specific gap I wanted to close, not a trend I wanted to chase.
+If you're hiring or evaluating: I tend to own problems end-to-end and push code that works in production, not just demos. The projects below are the ones I'm most serious about — each started from a specific gap I wanted to close, not a trend I wanted to chase.
 
 ---
 
@@ -71,6 +71,18 @@ Multiplayer prompt collaboration layer for Claude Code. A host starts a party an
 &nbsp;|&nbsp;
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+
+---
+
+### [od-MPC](https://github.com/atharva789/od-MPC) &nbsp; ![Status](https://img.shields.io/badge/scaffolding-FFD21E?style=flat)
+
+Latent model-predictive control for Innate's MARS robot: rolls candidate command sequences through a learned world model in latent space and picks the one whose predicted rollout lands nearest a goal image — validated with a linear pose probe against ground truth, not just "does the video look right." The search, cost functions, and probe are pure NumPy and fully unit-tested without a GPU, simulator, or model checkout; training wraps the world model as an explicit, opt-in subprocess.
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
+![MuJoCo](https://img.shields.io/badge/MuJoCo-000000?style=flat)
+&nbsp;|&nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ---
 
